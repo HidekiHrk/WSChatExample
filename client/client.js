@@ -1,7 +1,7 @@
 var is_connected = false;
 var text_input = document.getElementById('text_input');
 
-var ws = new WebSocket("ws://0.0.0.0:8000/");
+var ws = new WebSocket("ws://www.animesbrasilcommunity.com:8000/");
 
 ws.addEventListener('open', () => {
     is_connected = true;
