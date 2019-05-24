@@ -32,3 +32,9 @@ wss.on('connection', ws => {
         }
     });
 });
+
+const interval = setInterval(() => {
+    wss.clients.forEach(async ws => {
+        ws.send(JSON.stringify({type:"update", data:{text:read_text()}}));
+    })
+}, 500)
