@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+#chat_block {
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    width: 395px;
+    height: 400px;
+    padding-left: 5px;
+    border: 2px solid green;
+    margin-bottom: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#text_input, #name_input {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 395px;
+    padding-left: 5px;
+    border: 2px solid green;
+    margin-bottom: 20px;
+}

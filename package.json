@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/HidekiHrk/WSChatExample/issues"
   },
-  "homepage": "https://github.com/HidekiHrk/WSChatExample#readme"
+  "homepage": "https://github.com/HidekiHrk/WSChatExample#readme",
+  "dependencies": {
+    "ws": "^7.0.0"
+  }
 }
