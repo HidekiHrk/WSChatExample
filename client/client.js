@@ -9,9 +9,9 @@ ws.addEventListener('open', () => {
 })
 
 var update = async (msg) => {
+    let chat_block = document.getElementById('chat_block');
     let message = JSON.parse(msg.data);
-    if(message.type == "update"){
-        let chat_block = document.getElementById('chat_block');
+    if(message.type == "update" && chat_block.innerHTML != message.data.text){
         chat_block.innerHTML = message.data.text;
         chat_block.scrollTop = chat_block.scrollHeight;
     }
